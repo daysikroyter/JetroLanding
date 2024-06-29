@@ -436,7 +436,103 @@ body {
   background-color: #e8663c;
 }
 
+.footer__content {
+  max-width: 260px;
+}
+
+.footer__reviews {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.footer__contact {
+  max-width: 270px;
+}
+
 .footer__title {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer__text {
+  margin-bottom: 10px;
+}
+
+.footer__link,
+.footer__time {
+  color: #f3b29d;
+}
+
+.footer__time {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__email {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer__email span {
+  display: block;
+}
+
+.social {
+  display: flex;
+  gap: 5px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 5px;
+  transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+.social__link:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5);
+}
+
+.social__link:hover {
+  opacity: 0.7;
+}
+
+.social__link:active {
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.social__link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
+.social__link--facebook::before {
+  background-image: url('../images/social/facebook.png');
+}
+
+.social__link--twitter::before {
+  background-image: url('../images/social/twitter.png');
+}
+
+.social__link--email::before {
+  background-image: url('../images/social/email.png');
+}
+
+.social__link--rss::before {
+  background-image: url('../images/social/rss.png');
+}
+
+.social__link--vimeo::before {
+  background-image: url('../images/social/vimeo.png');
 }
